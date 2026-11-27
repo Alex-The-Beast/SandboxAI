@@ -204,11 +204,3 @@ All API routes are mounted below `/api`.
 - The Token-2022 component and standalone agent page are experiments, not registered routes in `AppRoutes.jsx`.
 - The frontend and backend packages do not define an automated test suite. Available frontend scripts include `npm run lint` and `npm run build`.
 
-## Talking points for an interview
-
-- **Wallet authentication:** Explain the nonce challenge, local wallet signature, backend verification, and cookie based session.
-- **Non-custodial transaction flow:** Explain how the backend constructs a transaction without signing, then the wallet asks the user to approve it.
-- **Tool using AI:** Explain how LangGraph connects Gemini to Zod validated tools and persists a conversation thread in MongoDB.
-- **External services:** Describe Solana RPC reads, Jupiter token/order APIs, and the server side Gemini integration.
-- **Full stack boundaries:** The React UI owns wallet interaction and presentation; Express applies auth and coordinates MongoDB, agent tools, RPC, and external APIs.
-- **Next improvements:** Finish transaction status confirmation, secure and narrow the dev signature helper, complete error handling and ownership checks for chat endpoints, and replace dashboard placeholders with implemented features.
